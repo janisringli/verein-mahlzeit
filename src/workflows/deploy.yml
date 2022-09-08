@@ -1,0 +1,21 @@
+name: Deployment
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          local-dir: ./src/
+          server-dir: ./verein-mahlzeit.ch/
+          state-name: .htsync
+          server: verein-mahlzeit.ch
+          port: 21
+          username: 420510-328-admin
+          password: ${{ secrets.FTP_PASSWORD }}
