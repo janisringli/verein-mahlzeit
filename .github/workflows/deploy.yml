@@ -12,7 +12,7 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          local-dir: ./src/
+          local-dir: ./wer-wir-sind/
           server-dir: ./verein-mahlzeit.ch/wer-wir-sind/
           state-name: .htsync
           server: verein-mahlzeit.ch
