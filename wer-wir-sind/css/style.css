@@ -2913,5 +2913,18 @@ select{padding: 0;}
 	padding-bottom: 80px;
 }
 
+.flex__container{
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
 
-	
+}
+.container__person{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 370px;
+}
+.introduction{
+	text-align: justify;
+}
