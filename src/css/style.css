@@ -2916,15 +2916,18 @@ select{padding: 0;}
 .flex__container{
 	display: flex;
 	flex-direction: row;
-	gap: 50px;
+	flex-wrap: wrap;
+	justify-content: space-around;
 
 }
 .container__person{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 370px;
+	width: 100%;
+	max-width: 300px;
 }
+
 .introduction{
 	text-align: justify;
 }
