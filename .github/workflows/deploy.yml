@@ -13,9 +13,9 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           local-dir: ./wer-wir-sind/
-          server-dir: ./verein-mahlzeit.ch/wer-wir-sind/
+          server-dir: ./verein-mahlzeit.ch/
           state-name: .htsync
           server: verein-mahlzeit.ch
           port: 21
           username: 420510-328-admin
-          password: ${{ secrets.FTP_PASSWORD }}
+          password: ${{ secrets.MAHLZEIT_FTP }}
